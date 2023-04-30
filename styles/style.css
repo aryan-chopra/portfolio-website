@@ -1,0 +1,197 @@
+:root
+{
+    --animationDuration: 0.6s;
+    --MessageAnimationDuration: 0.6s;
+    --background-color: #171717;
+    --button-width: 45px;
+    --button-height: 45px;
+    --drawing-time: 0.6s;
+    --dot-drawing-time: 0.1s;
+    --flash-time: 0.4s;
+    --button-pop-time: 0.4s;
+}
+
+::-webkit-scrollbar
+{
+    background-color: transparent;
+}
+
+
+body
+{
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+body::-webkit-scrollbar-thumb
+{
+    background-color: #393646;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    background-clip: content-box;
+}
+
+
+.title-container
+{
+    position: relative;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: radial-gradient(#301E67 20%, var(--background-color) 20%);
+    background-position: 0 0;
+    background-size: 10px 10px;
+    z-index: 1;
+    transition: 0.5s ease;
+}
+
+h1
+{
+    color: white;
+    margin: 0;
+}
+
+.title
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    z-index: 2;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+    cursor: default;
+}
+
+.title:hover
+{
+    letter-spacing: 10px;
+}
+
+.project-heading
+{
+    margin: 0;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-gallery-heading
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.image-gallery-container
+{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-gallery
+{
+    width: 75%;
+    display: flex;
+    gap: 2vmin;
+    margin: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gallery-element
+{
+    position: relative;
+    padding: 0px;
+    transition: var(--animationDuration);
+}
+
+img
+{
+    display: block;
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+    transition: var(--animationDuration);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.cc
+{
+    cursor: default;
+    transition: var(--animationDuration);
+    margin-bottom: 4%;
+    line-height: 1.2em;
+    max-height: 6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.cc-container
+{
+    margin: 0;
+    height: 0%;
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    bottom: 0%;
+    color: white;
+    max-height: 25%;
+    opacity: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: var(--animationDuration);
+    border-radius: 10px;
+}    
+
+.image-gallery::-webkit-scrollbar-thumb
+{
+    background-color: transparent;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+.image-gallery:hover.image-gallery::-webkit-scrollbar-thumb
+{
+    background-color: #393646;
+}
+
+.image-gallery:hover .gallery-element
+{
+    transform: scale(0.9);
+}
+
+.image-gallery .gallery-element:hover
+{
+    transform: scale(1.08);
+}
+
+.gallery-element:hover .cc-container
+{
+    opacity: 1;
+    backdrop-filter: blur(10px);
+    height: 25%;
+}
+
+#message:hover #message-icon
+{
+    transition: 0.2s ease;
+    transform: scale(0.9);
+}
+

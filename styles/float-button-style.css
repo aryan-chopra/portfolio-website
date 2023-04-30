@@ -1,0 +1,134 @@
+.float-container
+{
+    transition: 1s ease;
+    display: flex;
+    flex-direction: column-reverse;
+    position: fixed;
+    bottom: 1%;
+    right: 0.5%;
+    z-index: 10;
+    list-style: none;
+    align-items: flex-end;
+}
+
+.sub-button-list
+{
+    list-style: none;
+}
+
+.list-container
+{
+    transition: 0.5s ease;
+    width: 0px;
+    margin-right: 2.5px;
+}
+
+.float-button
+{
+    transition: var(--button-pop-time) ease;
+    margin-bottom: 7px;
+}
+
+.parent-button
+{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    border-radius: 50%;
+    transition: var(--button-pop-time) ease;
+    z-index: 12;
+    margin-top: 15px;
+}
+
+.parent-button-icon
+{
+    width: 50px;
+    height: 50px;
+}
+
+.sub-button
+{
+    background-color: black;
+    width: var(--button-width);
+    height: var(--button-height);
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    border-radius: 50%;
+    transition: var(--button-pop-time) ease;
+    z-index: 11;
+    cursor: pointer;
+}
+
+.sub-button-icon
+{
+    width: var(--button-width);
+    height: var(--button-height);
+}
+
+.float-button:hover
+{
+    transform: scale(1.04) translateY(-10%);
+    cursor: pointer;
+}
+
+.float-container:hover .list-container
+{
+    width: 100%;
+}
+
+.float-container:hover #message-icon
+{
+    transition: 0.2s ease;
+    transform: scale(0.9);
+}
+
+.float-container:hover #wind-right
+{
+    animation: wind-animation 1.5s ease infinite;
+}
+
+.float-container:hover #wind-left
+{
+    animation: wind-animation 1.6s ease infinite;
+    animation-delay: 0.1s;
+}
+
+.float-container:hover #wind-middle
+{
+    animation: wind-animation 1.7s ease infinite;
+    animation-delay: 0.2s;
+}
+
+.float-container:hover #wind-top
+{
+    animation: wind-animation 1.6s ease infinite;
+    animation-delay: 0.5s;
+}
+
+.float-container:hover #wind-bottom
+{
+    animation: wind-animation 1.7s ease infinite;
+    animation-delay: 0.8s;
+}
+
+.float-container:hover #wind-top-middle
+{
+    animation: wind-animation 1.7s ease infinite;
+    animation-delay: 0.2s;
+}
+
+.float-container:hover #plane
+{
+    transition: 1s ease;
+    transform: translateY(10%);
+    animation-name: gliding;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}

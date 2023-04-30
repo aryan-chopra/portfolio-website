@@ -1,0 +1,24 @@
+#flap
+{
+    transition: var(--button-pop-time);
+    transform-origin: 50% 25%;
+}
+
+#mail:hover #flap
+{
+    animation-name: open-flap;
+    animation-duration: calc(var(--MailAnimationDuration, 0.6s));
+    animation-timing-function: ease;
+    animation-delay: var(--button-pop-time);
+}
+
+@keyframes open-flap {
+    50%
+    {
+        rotate: x 180deg;
+    }
+    100%
+    {
+        rotate: x 0deg;
+    }
+}

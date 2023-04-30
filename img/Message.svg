@@ -1,0 +1,37 @@
+<svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 1" clip-path="url(#clip0_0_1)">
+<g id="icon">
+<g id="plane">
+<g id="upper-part">
+<g id="right-triangle">
+<line id="Line 1" x1="60.2268" y1="67.4282" x2="98.4327" y2="21.5278" stroke="white" stroke-width="1.5"/>
+<line id="Line 2" x1="83.3961" y1="83.3165" x2="98.2531" y2="21.8196" stroke="white" stroke-width="1.5"/>
+<line id="Line 3" y1="-0.75" x2="29.1623" y2="-0.75" transform="matrix(-0.799761 -0.583014 0.670459 -0.757461 84.143 83.497)" stroke="white" stroke-width="1.5"/>
+</g>
+<g id="left-triangle">
+<line id="Line 1_2" x1="48.5898" y1="58.0846" x2="98.5684" y2="21.4118" stroke="white" stroke-width="1.5"/>
+<line id="Line 2_2" x1="28.319" y1="43.1474" x2="98.7892" y2="21.3194" stroke="white" stroke-width="1.5"/>
+<line id="Line 3_2" y1="-0.75" x2="25.1868" y2="-0.75" transform="matrix(0.814121 0.588994 -0.64927 0.753486 28.5298 43.828)" stroke="white" stroke-width="1.5"/>
+</g>
+</g>
+<g id="lower-art">
+<line id="Line 4" x1="49.4174" y1="56.9761" x2="46.7427" y2="76.1038" stroke="white" stroke-width="1.5"/>
+<line id="Line 5" x1="61.1745" y1="66.6431" x2="46.3915" y2="75.6431" stroke="white" stroke-width="1.5"/>
+</g>
+</g>
+<g id="wind">
+<line id="wind-left" x1="16.5033" y1="66.438" x2="30.082" y2="54.438" stroke="white" stroke-width="1.5"/>
+<path id="wind-middle" d="M23 90L38.5786 75" stroke="white" stroke-width="1.5"/>
+<line id="wind-right" y1="-0.75" x2="18.12" y2="-0.75" transform="matrix(0.750462 -0.660913 0.640595 0.767879 55 93.4356)" stroke="white" stroke-width="1.5"/>
+<line id="wind-bottom" x1="90.5043" y1="73.944" x2="111.518" y2="55.4372" stroke="white" stroke-width="1.5"/>
+<line id="wind-top" x1="40.5043" y1="32.944" x2="61.5184" y2="14.4371" stroke="white" stroke-width="1.5"/>
+<line id="wind-top-middle" x1="101.494" y1="18.2624" x2="115.494" y2="5.44679" stroke="white" stroke-width="1.5"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="120" height="100" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,128 @@
+#square
+{
+    stroke-dasharray: 250;
+    stroke-dashoffset: 0;
+}
+
+#circle
+{
+    stroke-dasharray: 250;
+    stroke-dashoffset: 0;
+}
+
+#top
+{
+    stroke-dasharray: 20;
+    stroke-dashoffset: 20;
+}
+
+#bottom
+{
+    stroke-dasharray: 20;
+    stroke-dashoffset: 20;
+}
+
+#left
+{
+    stroke-dasharray: 20;
+    stroke-dashoffset: -20;
+}
+
+#right
+{
+    stroke-dasharray: 20;
+    stroke-dashoffset: -20;
+}
+
+#insta:hover #square
+{
+    animation: draw var(--drawing-time) ease;
+}
+
+#insta:hover #circle
+{
+    animation: draw var(--drawing-time) ease;
+}
+
+#insta:hover #dot
+{
+    r: 0;
+    animation: pop var(--dot-drawing-time) ease;
+    animation-delay: var(--drawing-time);
+    animation-fill-mode: forwards;
+}
+
+#insta:hover #top
+{
+    --order: 1;
+    animation: flash var(--flash-time) ease forwards;
+    animation-delay: var(--drawing-time);
+}
+
+#insta:hover #bottom
+{
+    --order: 1;
+    animation: flash var(--flash-time) ease forwards;
+    animation-delay: var(--drawing-time);
+}
+
+#insta:hover #right
+{
+    --order: -1;
+    animation: flash-sideways var(--flash-time) ease forwards;
+    animation-delay: calc(var(--drawing-time) * 0.8);
+}
+
+#insta:hover #left
+{
+    --order: -1;
+    animation: flash-sideways var(--flash-time) ease forwards;
+    animation-delay: calc(var(--drawing-time) * 0.8);
+}
+
+@keyframes draw {
+    from{
+        stroke-dashoffset: 250;
+    }
+
+    to
+    {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes pop {
+    from
+    {
+        r:0;
+    }
+
+    to
+    {
+        r: 3.5;
+    }
+}
+
+@keyframes flash {
+    50%
+    {
+        stroke-dashoffset: 0;
+    }
+
+    100%
+    {
+        stroke-dashoffset: -20;
+    }
+}
+
+@keyframes flash-sideways {
+    50%
+    {
+        stroke-dashoffset: 0;
+    }
+
+    100%
+    {
+        stroke-dashoffset: 20;
+    }
+}
