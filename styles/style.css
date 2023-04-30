@@ -155,8 +155,9 @@ img
     opacity: 0;
     text-overflow: ellipsis;
     overflow: hidden;
-    transition: var(--animationDuration);
+    transition: var(--animationDuration) ease;
     border-radius: 10px;
+    backdrop-filter: blur(10px);
 }    
 
 .image-gallery::-webkit-scrollbar-thumb
@@ -185,7 +186,6 @@ img
 .gallery-element:hover .cc-container
 {
     opacity: 1;
-    backdrop-filter: blur(10px);
     height: 25%;
 }
 
@@ -194,4 +194,3 @@ img
     transition: 0.2s ease;
     transform: scale(0.9);
 }
-
