@@ -97,9 +97,14 @@ h1
     overflow: hidden;
 }
 
-.image-gallery
+.image-gallery-div
 {
     width: 75%;
+    display: flex;
+}
+
+.image-gallery
+{
     display: flex;
     gap: 2vmin;
     margin: 0;
@@ -122,10 +127,11 @@ img
     width: 40vmin;
     height: 56vmin;
     object-fit: cover;
-    object-position: center;
-    transition: var(--animationDuration);
+    object-position: 0% 50%;
     border-radius: 10px;
     z-index: 0;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .cc
@@ -140,6 +146,8 @@ img
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .cc-container
@@ -156,7 +164,7 @@ img
     text-overflow: ellipsis;
     overflow: hidden;
     transition: var(--animationDuration) ease;
-    border-radius: 10px;
+    border-radius: 0px;
     backdrop-filter: blur(10px);
 }    
 
@@ -189,8 +197,19 @@ img
     height: 25%;
 }
 
+.gallery-element:hover .gallery-image
+{
+    border-radius: 1px;
+}
+
 #message:hover #message-icon
 {
     transition: 0.2s ease;
     transform: scale(0.9);
+}
+
+#mail-icon
+{
+    height: calc(var(--button-height) - 10px);
+    width: calc(var(--button-width) - 10px);
 }
